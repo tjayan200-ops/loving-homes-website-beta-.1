@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Loving Homes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<header>
+  <div class="logo">Loving Homes</div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+      <li><a href="quiz.html" class="nav-link">Pet Quiz</a></li>
+      <li><a href="packages.html" class="nav-link">Packages</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="themeToggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+</header>
+
+<main>
+  <section id="contact" class="contact-box reveal fade-up active">
+    <h3>Ready to Give Your Pet the Experience They Deserve?</h3>
+    <p>Contact our team today to schedule a visit or ask questions!</p>
+    <a href="mailto:lovinghomes66@gmail.com?subject=Booking%20Inquiry%20-%20Loving%20Homes&body=Hi%20Loving%20Homes%2C%0A%0AI%27m%20interested%20in%20booking%20a%20stay%20for%20my%20pet.%20Please%20share%20availability%20and%20pricing.%0A%0AThank%20you.">Email Us</a>
+  </section>
+
+  <section id="email" class="email-section reveal fade-up active">
+    <div class="email-card">
+      <h2>Send an Email to Loving Homes</h2>
+      <p>Use this form to email lovinghomes66@gmail.com from your email app.</p>
+
+      <form id="emailForm" novalidate>
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="e.g., Thejas Jayan" required>
+        </div>
+
+        <div class="form-row">
+          <label for="fromEmail">Your Email</label>
+          <input type="email" id="fromEmail" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Booking Inquiry" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="7" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <div class="form-row inline">
+          <label class="checkbox">
+            <input type="checkbox" id="sendCopy"> Send me a copy (CC)
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="primary-btn"><i class="fa-solid fa-paper-plane"></i> Send Email</button>
+          <a class="secondary-btn" href="mailto:lovinghomes66@gmail.com">Open Mail App</a>
+        </div>
+        <p class="tiny-note">Your default email app will open with the message pre-filled. Actual sending happens from your email account.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Loving Homes. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
